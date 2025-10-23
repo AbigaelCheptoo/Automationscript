@@ -1,12 +1,12 @@
 # Automated Docker Deployment Script
 
-This repository contains a Bash script (`deploy.sh`) that automates the deployment of a Dockerized application on a remote Linux server. It is designed for production-grade deployments and includes proper logging, error handling, and Nginx reverse proxy configuration.
+This repository contains a Bash script (`deploy.sh`) that automates the deployment of a Dockerized application on a remote Linux server. It is designed for production-grade deployments and includes proper logging, error handling and Nginx reverse proxy configuration.
 
 ---
 
 ## Features
 
-- Clones any GitHub repository using a Personal Access Token (PAT)
+- Clones any given GitHub repository using a Personal Access Token (PAT)
 - Builds and runs Docker containers from `Dockerfile` or `docker-compose.yml`
 - Automatically installs Docker, Docker Compose, and Nginx on the remote server
 - Configures Nginx as a reverse proxy to the application
@@ -41,4 +41,5 @@ Application container port: Internal port your app exposes (e.g., 80)
 After completion, visit your deployed app:
 
 http://<server-ip>
+
 
